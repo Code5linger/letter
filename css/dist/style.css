@@ -22,11 +22,20 @@ body {
 
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   opacity: 0.7;
   list-style: none;
 }
 .menu-item {
   margin: 0 47px;
+}
+
+.menu-item:last-of-type {
+  color: #ff7676;
+  border-bottom: 4px solid #f8d1be;
+}
+
+.container {
+  max-width: 1500px;
 }
