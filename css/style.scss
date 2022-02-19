@@ -1,0 +1,32 @@
+body {
+  font-family: "Alegreya", serif;
+  background: linear-gradient(to left, #ffe1d1 0%, #ffdbca 100%);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  align-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-logo {
+  align-self: center;
+  justify-self: center;
+}
+
+.header-letter {
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  list-style: none;
+  &-item {
+    margin: 0 47px;
+  }
+}
