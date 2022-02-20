@@ -18,12 +18,22 @@ body {
   //setting up first grid.
   display: grid;
   grid-template-columns: 20% 1fr;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 45px;
+  }
 }
 .header-logo {
   align-self: center;
   margin-left: 2rem;
 }
+#logo {
+  transition: all 0.5s ease-out;
+}
 
+#logo:hover {
+  transform: perspective(400px) translate3d(-10px, 0px, -10px) scale(0.93);
+}
 .header-letter {
   font-size: 30px;
   color: #6a4a39;
@@ -41,7 +51,30 @@ body {
     margin: 47px 45px;
     position: relative;
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
+
+// setting up line animation for menu items.
+.menu-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #6a4a39;
+  position: absolute;
+  visibility: hidden;
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.25s ease-out;
+}
+
+.menu-item:hover::after {
+  visibility: visible;
+  transform: scale(1);
+}
+
 .menu-item:last-of-type {
   color: #ff7676;
   border-bottom: 4px solid #f8d1be;
@@ -69,6 +102,10 @@ body {
   grid-area: title;
   justify-self: end;
   align-self: center;
+  font-family: Alegreya;
+  font-style: normal;
+  line-height: normal;
+  z-index: 3;
 }
 
 .lamp {
@@ -106,6 +143,12 @@ body {
   font-size: 20px;
   text-align: center;
   color: #ffffff;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+
+  &:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+  }
 }
 //Waves
 .hide {
@@ -135,7 +178,20 @@ body {
 // Plane SVG
 #planes {
   width: 100%;
+  transform-style: preserve-3d;
   grid-area: sun;
   justify-self: end;
   align-self: end;
+}
+
+//second section
+.two {
+  background: #fff;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/780593/Group%202-1.png");
+  background-repeat: no-repeat;
+  background-position: 35% 0;
+  background-size: cover;
+}
+.stairs {
+  max-width: 300px;
 }
