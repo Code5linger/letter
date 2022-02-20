@@ -1,11 +1,6 @@
 $color-1: #ffe1d1;
 $color-2: #ffdbca;
 
-// :root {
-//     /* BASE COLORS */
-//     --color-1:  #ffe1d1;
-//     --color-2: #ffdbca;
-// }
 body {
   overflow-x: hidden;
   font-family: Alegreya, serif;
@@ -22,10 +17,12 @@ body {
     padding: 45px;
   }
 }
+
 .header-logo {
   align-self: center;
   margin-left: 2rem;
 }
+
 #logo {
   transition: all 0.5s ease-out;
 }
@@ -33,10 +30,12 @@ body {
 #logo:hover {
   transform: perspective(400px) translate3d(-10px, 0px, -10px) scale(0.93);
 }
+
 .header-letter {
   font-size: 30px;
   color: #6a4a39;
 }
+
 .menu {
   font-size: 20px;
   color: #000000;
@@ -85,6 +84,7 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
+
 .hero_container {
   position: relative;
   min-height: 550px;
@@ -133,11 +133,13 @@ body {
   line-height: 69px;
   font-weight: bold;
 }
+
 .cta_description {
   font-size: 20px;
   color: #333333;
   margin-bottom: 2rem;
 }
+
 .cta_btn {
   width: 200px;
   height: 44px;
@@ -160,6 +162,7 @@ body {
     opacity: 0.7;
   }
 }
+
 @media (max-width: 768px) {
   .hero_cta {
     justify-self: center;
@@ -178,6 +181,7 @@ body {
     width: 100%;
   }
 }
+
 //Waves
 .hide {
   visibility: hidden;
@@ -210,6 +214,7 @@ body {
     }
   }
 }
+
 // Plane SVG
 #planes {
   width: 100%;
@@ -228,6 +233,7 @@ body {
   transform: translate(-500px, 300px);
   animation: fly_right 3s ease-out 0.8s 1 forwards;
 }
+
 @keyframes fly_right {
   10% {
     opacity: 1;
