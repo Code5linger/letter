@@ -78,7 +78,7 @@ body {
 
 .container {
   background: linear-gradient(to left, #ffe1d1, #ffdbca);
-  max-width: 1500px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
