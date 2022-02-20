@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: Alegreya, serif;
+  margin: 0 auto;
 }
 
 .header {
