@@ -82,7 +82,8 @@ body {
 //Hero section
 .container {
   background: linear-gradient(to left, $color-1, $color-2);
-  max-width: 100%;
+  //max-width: 100%; //If you want full-width
+  max-width: 1500px;
   margin: 0 auto;
 }
 
